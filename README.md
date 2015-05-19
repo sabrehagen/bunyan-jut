@@ -31,7 +31,7 @@ log = bunyan.createLogger({
 	name: "myApp",
 	stream: new BunyanJut({
 		receiver_ip: "your_receiver_ip",
-		port: "receiver_listening_port"
+		receiver_port: "receiver_listening_port"
 	}),
 	level: "error"
 });
@@ -42,11 +42,11 @@ You can also pass an optional error handler.
 
 ```javascript
 new BunyanJut({
-	webhook_url: "your_webhook_url",
-	channel: "your_channel",
-	username: "your_username",
-}, function(error){
-	console.log(error);
+    receiver_ip: "your_receiver_ip",
+    receiver_port: "receiver_listening_port",
+    error: function(error){
+        console.log(error);
+    }
 });
 ```
 
