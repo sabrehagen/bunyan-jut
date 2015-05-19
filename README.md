@@ -24,14 +24,14 @@ npm install bunyan-jut
 
 ```javascript
 var bunyan  = require("bunyan"),
-	BunyanJut = require('bunyan-jut'),
+	BunyanJut = require("bunyan-jut"),
 	log;
 
 log = bunyan.createLogger({
 	name: "myApp",
 	stream: new BunyanJut({
 		receiver_ip: "your_receiver_ip",
-		receiver_port: "receiver_listening_port"
+		receiver_port: "your_receiver_port"
 	}),
 	level: "error"
 });
