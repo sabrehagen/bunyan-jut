@@ -54,9 +54,8 @@ new BunyanJut({
 ###Defaults
 bunyan-jut sets the following defaults:
 
-*  `channel` => `"#general"`
-* `username` => `"Bunyan Slack"`
-* `icon_emoji` => `":scream_cat:"`
+* `receiver_ip` => `localhost`
+* `port` => `9000`
 
 
 ## Authors
